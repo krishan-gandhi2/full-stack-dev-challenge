@@ -39,7 +39,7 @@ public class RestApiController {
 		String repoName = "angular/angular";
 		RestTemplate restTemplate = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
-		headers.set("Authorization", "Basic Z2FuZGhpLm1lMjNAZ21haWwuY29tOnZpcnR1c2FAMTI=");
+		headers.set("Content-Type", "application/json");
 		ResponseEntity<Repositories> usersMap = restTemplate.exchange(REST_SERVICE_URI + "/search/repositories?q=" + repoName,HttpMethod.GET,new HttpEntity<byte[]>(headers),
 				Repositories.class);
 		response.setHeader("Access-Control-Allow-Origin", "*");
