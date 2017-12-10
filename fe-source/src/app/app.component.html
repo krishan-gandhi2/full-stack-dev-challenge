@@ -1,0 +1,35 @@
+<div style="text-align:center">
+  <h1>
+   <img src="assets\image.png" width="100" height="50" (click)="refresh()" />
+  </h1>
+
+</div>
+
+<div class="container-fluid">
+<ul>
+  <li *ngFor="let any of repoData">
+    
+      <div class="tile">
+        <div class="avatar-parent-child">
+          <a href="#" data-skip-pjax="true">
+        <img src="{{any.author.avatar_url}}" width="36" height="36" class="avatar"/>
+        </a>
+        </div>
+        <div class="title">
+            <p class="">
+              <b>{{ any.commit.message.substring(0,60)}}</b> <br/>
+              <span class="author">{{any.author.login}} </span> <span class="timeslot">committed {{any.commit.author.date}} ago</span>
+               <span>&nbsp;</span>
+              <span>commit:{{any.sha}}</span>
+            </p>
+         </div>
+        
+      </div>
+
+    
+
+
+  </li>
+
+</ul>
+</div>

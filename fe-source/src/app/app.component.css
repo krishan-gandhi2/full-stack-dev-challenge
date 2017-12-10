@@ -1,0 +1,47 @@
+.tile{
+    background-color: white;
+    border: 1px solid gray;
+    width: 800px;
+    height:60px;
+    margin:auto;
+   
+}
+.avatar-parent-child{
+width:50px;
+float:left;
+clear:both;
+}
+.avatar-parent-child img{
+    padding: 10px;
+    
+}
+li{
+    list-style: none;
+}
+.title{
+    float:left;
+    margin-left:3px;
+    width:auto;
+    color:#444d56;
+
+}
+
+.title p{
+        margin-top:7px;
+}
+    .author{
+        color:#586069;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .timeslot{
+       color: #586069;
+       font-size: 14px;
+    }
+    .commit{
+       float:right;
+         color: #586069;
+       font-size: 14px;
+       clear:both;
+       margin-left:120px;
+    }
